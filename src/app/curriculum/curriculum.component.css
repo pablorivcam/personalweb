@@ -1,0 +1,34 @@
+#curriculum{
+	font-family: 'Raleway';
+    font-weight: 500;
+}
+#curriculum-header{
+	display : inline-flex;
+	width: 100%;
+	padding: 1em;
+	background: #212529;
+	color: #FFFFFF;
+}
+
+#curriculum-footer{
+	width: 100%;
+	padding: 3em 1em;
+	background: #212529;
+}
+
+#curriculum-header-info{
+	margin: auto 1em auto auto;
+}
+
+#curriculum-header-info a{
+	color: #FFFFFF;
+}
+
+#curriculum-photo img{
+	width: 10em;
+	height: 10em;
+}
+
+#curriculum-header-info fa-icon{
+	margin-right: 0.5em;
+}

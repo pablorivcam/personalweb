@@ -14,26 +14,45 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { MainContentComponent } from './main-content/main-content.component';
 import { AboutInformationComponent } from './about-information/about-information.component';
+import { CurriculumComponent } from './curriculum/curriculum.component';
 import { SkillsInformationComponent } from './skills-information/skills-information.component';
 import { InViewportModule } from 'ng-in-viewport';
 import { FooterComponent } from './footer/footer.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 
+import { RouterModule, Routes } from '@angular/router';
+
 export function translateHttpLoaderFactory( http: HttpClient ) {
     return new TranslateHttpLoader( http );
 }
+
+const appRoutes: Routes = [
+    {
+        path: 'curriculum',
+        component: CurriculumComponent,
+        data: { title: 'Curriculum' }
+    },
+    {
+        path: '',
+        component: MainContentComponent,
+        data: { title: 'Pablo Rivas Camino' }
+    }
+];
 
 @NgModule( {
     declarations: [
         AppComponent,
         InputUserDataFormComponent,
         InitialAnimationComponent,
+        MainContentComponent,
         NavBarComponent,
         AboutInformationComponent,
         SkillsInformationComponent,
-        FooterComponent
+        FooterComponent,
+        CurriculumComponent
     ],
     imports: [
         InViewportModule,
@@ -51,9 +70,14 @@ export function translateHttpLoaderFactory( http: HttpClient ) {
                 useFactory: translateHttpLoaderFactory,
                 deps: [HttpClient]
             }
-        } )
+        } ),
+        RouterModule.forRoot(
+            appRoutes,
+            { enableTracing: true } // <-- debugging purposes only
+        )
     ],
     providers: [MessageService],
-    bootstrap: [AppComponent]
+    bootstrap: [AppComponent],
+    exports: [RouterModule]
 } )
 export class AppModule { }

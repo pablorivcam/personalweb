@@ -1,18 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { TranslateService } from '@ngx-translate/core'
+import * as AOS from 'aos';
 
 @Component( {
-    selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css']
+    selector: 'main-content',
+    templateUrl: './main-content.component.html',
+    styleUrls: ['./main-content.component.css']
 } )
-export class AppComponent implements OnInit {
+export class MainContentComponent implements OnInit {
 
     title = 'personalweb';
     faArrowRight = faArrowRight;
 
     ngOnInit(): void {
+        AOS.init();
     }
 
     constructor( private translateService: TranslateService ) {
