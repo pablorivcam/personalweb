@@ -1,0 +1,190 @@
+#skills-information {
+	background-color: #F5F5F5;
+}
+
+.skill_category_icon {
+	display: block;
+}
+
+.skill_category {
+	display: inherit;
+	width: 100%;
+}
+
+.skillbars {
+	width: 100%;
+	padding-left: 2em;
+}
+
+.skill_category_icon img {
+	width: 5em;
+	height: 5em;
+}
+
+.skill_category h2 {
+	margin-top: 1.4em;
+}
+
+.skill_category_icon {
+	margin-left: 5em;
+}
+
+/**************/
+
+/* Progress Bar Style 3 */
+.pd-progress-style3 {
+	height: 30px;
+	box-shadow: none;
+	border-radius: 0;
+	overflow: visible;
+	margin-top: 20px;
+}
+
+.pd-progress-style3+.pd-progress-style3 {
+	margin-top: 1em;
+}
+
+.pd-progress-style3 .progress-bar {
+	position: relative;
+	text-align: left;
+	line-height: 30px;
+	border-radius: 0;
+	box-shadow: none;
+	-webkit-transition: width 2s; /* Safari prior 6.1 */
+	transition: width 2s;
+}
+
+.pd-progress-style3 .pb-label {
+	position: absolute;
+	left: 0;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 500;
+	padding: 0 12px;
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.pd-progress-style3 .pb-percent {
+	position: absolute;
+	right: 10px;
+	font-weight: 500;
+	color: #fff;
+	font-size: 12px;
+	line-height: 26px;
+	padding: 0 7px;
+}
+
+.skill-container{
+	text-align: center;
+	width: 100%;
+	margin-bottom: 1em;
+	display: flex !important;
+}
+
+.skill2{
+	padding-top: 1em;
+	margin:auto;
+	background-color: #1B9AAA;
+	width: 5em;
+	height: 5em;
+	border-radius: 50%;
+	font-size: 1em;
+	color: #fff;
+	text-align: center;
+}
+
+.skill {
+	margin:auto;
+	background-color: #FFFFFF;
+	width: 5em;
+	height: 5em;
+	border-radius: 50%;
+	font-size: 1em;
+	color: #fff;
+	line-height: 3em;
+	text-align: center;
+	line-height:5em;
+	padding: 0;
+}
+
+.skill2 img{
+	width: 3em;
+	height: 3em;
+}
+
+.imageSkill{
+	background-color: #e6e6e6 !important;
+}
+
+.skill-image-description{
+	padding-top: 1em;
+	color: #000000;
+}
+
+
+/****/
+
+.container{
+	margin: 0;
+	width: auto;	
+}
+
+@media (min-width: 3000px) {
+
+}
+
+@media (max-width: 800px) {
+	.skill-container{
+	}
+	.skill2 {
+		font-size: 0.6em;
+		
+	}
+}
+
+@media (max-width: 1220px) {
+	.content{
+		display: block;
+	}
+	.skill_category_icon {
+    	margin-left: 0em;
+	}
+	.skillbars{
+		padding-left: 0;
+	}
+}
+
+@media (min-width: 500px) {
+
+	.out-of-view {
+		width: 0% !important;
+	}
+}
+
+@media (max-width: 500px) {
+	.skill_category_icon h2{
+		font-size: 1.25rem;
+		margin-top: 0.5em;
+	}
+	
+	.pb-label ,.pb-percent{
+		font-size: 8px !important;
+		padding: 0 !important; 
+	}
+}
+
+
+@media print{
+
+	.dotnet-skill{
+		margin-bottom: 5em;
+	}
+	
+	.skill_category_icon{
+		margin-top: 2em;
+	}
+	
+    .out-of-view{
+		width: unset !important;		
+	}
+}

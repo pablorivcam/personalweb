@@ -1,0 +1,33 @@
+<div class="main_container">
+
+	<initial-animation></initial-animation>
+	<div class="main_header">
+
+		<div class="main_header_content">
+			<div>
+				<span translate>Soy </span> <span class="primary-color">Pablo
+					Rivas Camino </span><span translate>y esta es mi página web</span>
+			</div>
+			<div class="my_button" [ngx-scroll-to]="'#about-information'"
+				[ngx-scroll-to-offset]="-100">
+				<span translate>Entrar</span>
+				<div class="fa-icon" style="margin-left: 0.25em">
+					<fa-icon class="fa-icon" [icon]="faArrowRight"></fa-icon>
+				</div>
+			</div>
+			<!-- <div class="languaje-selector" style="display:flex; margin-top: 0.25em">
+				<a class="languaje-btn" (click)="switchLanguage('gl')">GL</a>			
+				<a class="languaje-btn" (click)="switchLanguage('es')">ES</a>
+				<a class="languaje-btn" (click)="switchLanguage('en')">EN</a>			
+			</div>-->
+		</div>
+
+	</div>
+
+</div>
+<nav-bar></nav-bar>
+<div id="main_content">
+	<about-information></about-information>
+	<skills-information></skills-information>
+	<footer></footer>
+</div>

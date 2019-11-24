@@ -1,0 +1,38 @@
+<div id="contactFormContainer">
+
+	<form id="contactForm" #form="ngForm" [formGroup]="userForm"
+		(ngSubmit)="onSubmit(form.value)" data-aos="fade-in"
+		data-aos-duration="1500">
+		<div class="form-group" [ngClass]="{ 'has-error': invalidName() }">
+			<!-- Name -->
+			<label for="name" class="control-label" translate>Nombre</label> <input
+				type="text" formControlName="name" class="form-control" id="name"
+				name="name" placeholder="Pablo">
+			<p *ngIf="invalidName()" id="name_error" class="help-block" translate>Nombre inválido</p>
+		</div>
+
+		<div class="form-group" [ngClass]="{ 'has-error': invalidEmail() }">
+			<!-- Email -->
+			<label for="email" class="control-label" translate>Correo electrónico</label> <input
+				type="text" class="form-control" id="email" name="email"
+				formControlName="email" placeholder="asdfg@email.com">
+			<p *ngIf="invalidEmail()" id="email_error" class="help-block" i18>Dirección de electrónico inválida.
+				</p>
+
+		</div>
+
+		<div class="form-group" [ngClass]="{ 'has-error': invalidMessage() }">
+			<!-- Message -->
+			<label for="message" class="control-label" translate>Mensaje</label>
+			<textarea rows="4" formControlName="message" class="form-control"
+				id="message" name="message" placeholder="..."></textarea>
+			<p *ngIf="invalidMessage()" id="message_error" class="help-block"
+				translate>El contenido del no puede estar vacío</p>
+		</div>
+
+		<div class="form-group has-error">
+			<!-- Send Button -->
+			<button type="submit" class="my_button" translate>Enviar</button>
+		</div>
+	</form>
+</div>

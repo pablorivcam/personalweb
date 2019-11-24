@@ -1,0 +1,33 @@
+#contactForm{
+	width: 50%;
+	margin: auto;
+}
+
+#contactFormContainer{
+	padding-top: 2em;
+	background-color: #343a40;
+	color: #FFFFFF;
+}
+
+#contactFormContainer input, #contactFormContainer textarea{
+	color: #000000;
+}
+
+#contactFormContainer *{
+	color: #FFFFFF;
+}
+
+#contactFormContainer .section-line{
+	background-color: #FFFFFF;
+}
+
+.form-group {
+  margin-bottom: 0 !important;
+  padding-bottom: 1rem;
+}
+
+/**@media print{**/
+	#contactForm {
+		display: none !important;
+	}
+/**}**/

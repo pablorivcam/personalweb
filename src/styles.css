@@ -1,0 +1,92 @@
+/* You can add global styles to this file, and also import other style files */
+app-root .container-fluid{
+	margin: 0em;
+	padding: 0em;
+}
+
+body{
+	font-family: 'Raleway';
+    font-weight: 500;
+}
+
+.primary-color {
+	font-weight: 600;
+	color: #1B9AAA;
+}
+
+.my_button {
+	background: none;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    box-sizing: inherit;
+    display: inline-block;
+    font-size: 13pt;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.my_button:hover{
+	background: #1B9AAA;
+	border-color:#1B9AAA;
+}
+
+h1{
+	width:50%;
+	margin: auto;
+	text-align: center;
+	font-weight: bold;
+	padding: 1em 0.5em 0.25em 0.5em;
+	color: #1C5D99;
+}
+
+.content {
+	width: 100%;
+	text-align: center;
+	display:flex;
+	padding: 0 10em;
+}
+
+.section-line {
+	margin: auto;
+	width: 6em;
+	height: 0.3em;
+	background-color:#1C5D99;
+	margin-bottom: 1em;
+}
+
+@media print{
+    [data-aos] {
+        display: block !important;
+        opacity: 1 !important;
+        transform: translate(0) scale(1) !important;
+    }
+    
+    a{
+    	display: none;
+    }
+    .main_container{
+    	display:none;
+    }
+}
+
+@media ( max-width : 500px) {
+	body{
+		font-size: 0.5rem;
+	}
+	
+	h1{
+		font-size: 1.25rem;
+	}
+}
+
+@media ( max-width : 250px) {
+	
+	body{
+		font-size: 0.25rem;
+	}
+	
+	h1{
+		font-size: 0.75rem;
+	}
+	
+}
