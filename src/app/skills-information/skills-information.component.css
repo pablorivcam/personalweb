@@ -162,9 +162,10 @@
 		margin-top: 0.5em;
 	}
 	
-	.pb-label ,.pb-percent{
-		padding: 0 !important; 
+	.pb-label, .pb-percent{
+		font-size: 0.6em !important;
 	}
+	
 }
 
 

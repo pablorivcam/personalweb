@@ -90,3 +90,10 @@ h1{
 	}
 	
 }
+
+@media ( max-width : 800px) {
+		
+	.skill-container{
+		padding: 0 1em;
+	}
+}
