@@ -1,3 +1,7 @@
+.navbar *{
+	font-size: 0.88em;
+}
+
 .collapse{
 	-webkit-transition: height 1s ease-out; /* Safari prior 6.1 */
  	transition: height 0.5s ease-out;

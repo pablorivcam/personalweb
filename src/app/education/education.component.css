@@ -1,0 +1,16 @@
+#education {
+	background-color: #F5F5F5;
+	padding-bottom: 1em;
+}
+.education-content {
+	width: 100%;
+	text-align: center;
+}
+
+.education-content ul{
+	display: contents;
+}
+
+.education-content .education-list{
+	margin-bottom: 1em;
+}

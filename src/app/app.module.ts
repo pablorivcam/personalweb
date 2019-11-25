@@ -24,6 +24,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 
 import { RouterModule, Routes } from '@angular/router';
+import { EducationComponent } from './education/education.component';
 
 export function translateHttpLoaderFactory( http: HttpClient ) {
     return new TranslateHttpLoader( http );
@@ -52,7 +53,8 @@ const appRoutes: Routes = [
         AboutInformationComponent,
         SkillsInformationComponent,
         FooterComponent,
-        CurriculumComponent
+        CurriculumComponent,
+        EducationComponent
     ],
     imports: [
         InViewportModule,
