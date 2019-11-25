@@ -1,6 +1,7 @@
 #curriculum{
 	font-family: 'Raleway';
     font-weight: 500;
+    height: 100%;
 }
 #curriculum-header{
 	display : inline-flex;
@@ -14,6 +15,25 @@
 	width: 100%;
 	padding: 3em 1em;
 	background: #212529;
+}
+
+#curriculum-content{
+	width: 100%;
+	height: 80%;	
+	display: flex;	
+}
+
+.curriculum-left-section{
+	width: 20%;
+	text-align: center;
+	background: #D5D5D5;	
+	padding: 1em;
+}
+
+.curriculum-right-section{
+	width: 80%;
+	padding: 1em;
+	background: #FFFFFF;	
 }
 
 #curriculum-header-info{
@@ -31,4 +51,53 @@
 
 #curriculum-header-info fa-icon{
 	margin-right: 0.5em;
+}
+
+h2{
+	width:100%;
+	margin: 0;
+	text-align: center;
+	font-weight: bold;
+	padding: 0em;
+	color: #1C5D99;
+}
+
+.study-years{
+	margin-bottom: 1em;
+}
+
+.study-title{
+	font-weight: bold;
+}
+
+.curriculum-skills, .curriculum-main-content{
+	margin: 1em;
+}
+
+.curriculum-skill-category-title{
+	font-weight: bold;
+}
+.curriculum-skill-group{
+	display: flex;
+}
+
+.curriculum-skill-category{
+	width: 50%;
+}
+
+.curriculum-skill-category{
+	margin: 1em auto;
+}
+
+.curriculum-skill-progress{
+	height: 0.3em;
+	margin: auto 1em;
+	background-color: #1C5D99;
+}
+.languajes-list-item{
+	display: flex;
+	list-style-type: circle;
+}
+.curriculum-skill-languaje-name{
+	width: 5.5em;
 }
