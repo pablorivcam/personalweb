@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faAngleDoubleUp, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { Router } from '@angular/router';
 
 @Component( {
     selector: 'footer',
@@ -12,9 +13,17 @@ export class FooterComponent implements OnInit {
     faEmail = faEnvelope;
     faPhone = faPhone;
 
-    constructor() { }
+    constructor( private router: Router ) { }
 
     ngOnInit() {
+    }
+
+    onLinkedin() {
+        window.location.href = 'https://www.linkedin.com/in/pablo-rivas-camino';
+    }
+
+    onGithub() {
+        window.location.href = 'https://github.com/pablorivcam';
     }
 
 }

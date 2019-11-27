@@ -19,7 +19,7 @@
 
 #curriculum-content{
 	width: 100%;
-	height: 80%;	
+	height: 86%;	
 	display: flex;	
 }
 
@@ -100,4 +100,13 @@ h2{
 }
 .curriculum-skill-languaje-name{
 	width: 5.5em;
+}
+.curriculum-skill-progress-limit{
+	width: 0.2em;
+	height: 100%;
+	background-color: #D5D5D5;
+}
+.curriculum-skill-progress-container{
+	width: 200px;
+	display:flex;
 }
