@@ -3,6 +3,11 @@
     font-weight: 500;
     height: 100%;
 }
+
+#curriculum-name{
+	padding-top: 0.9em;
+}
+
 #curriculum-header{
 	display : inline-flex;
 	width: 100%;
@@ -91,7 +96,7 @@ h2{
 
 .curriculum-skill-progress{
 	height: 0.3em;
-	margin: auto 1em;
+	margin: auto 0em auto 1em;
 	background-color: #1C5D99;
 }
 .languajes-list-item{
@@ -102,8 +107,9 @@ h2{
 	width: 5.5em;
 }
 .curriculum-skill-progress-limit{
-	width: 0.2em;
-	height: 100%;
+	width: 10px;
+	height: 0.3em;
+	margin: auto 0em;
 	background-color: #D5D5D5;
 }
 .curriculum-skill-progress-container{
