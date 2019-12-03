@@ -3,7 +3,7 @@ import { faAngleDoubleUp, faPhone, faEnvelope } from '@fortawesome/free-solid-sv
 import { Router } from '@angular/router';
 
 @Component( {
-    selector: 'footer',
+    selector: 'footer-component',
     templateUrl: './footer.component.html',
     styleUrls: ['./footer.component.css']
 } )
