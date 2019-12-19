@@ -246,10 +246,19 @@
 								<div class="progress pd-progress-style3 dotnet-skill">
 									<div class="progress-bar out-of-view" role="progressbar"
 										aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"
+										style="width: 65%" inViewport
+										[inViewportOptions]="{ threshold: [0] }"
+										(inViewportAction)="onIntersection($event)">
+										<span class="pb-label">Sonar</span> <span class="pb-percent">65%</span>
+									</div>
+								</div>				
+								<div class="progress pd-progress-style3 dotnet-skill">
+									<div class="progress-bar out-of-view" role="progressbar"
+										aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"
 										style="width: 60%" inViewport
 										[inViewportOptions]="{ threshold: [0] }"
 										(inViewportAction)="onIntersection($event)">
-										<span class="pb-label">Sonar</span> <span class="pb-percent">60%</span>
+										<span class="pb-label">Jenkins</span> <span class="pb-percent">60%</span>
 									</div>
 								</div>
 								<div class="progress pd-progress-style3">
@@ -261,7 +270,15 @@
 										<span class="pb-label">Eclipse</span> <span class="pb-percent">70%</span>
 									</div>
 								</div>
-
+								<div class="progress pd-progress-style3">
+									<div class="progress-bar out-of-view" role="progressbar"
+										aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"
+										style="width: 70%" inViewport
+										[inViewportOptions]="{ threshold: [0] }"
+										(inViewportAction)="onIntersection($event)">
+										<span class="pb-label">Redmine</span> <span class="pb-percent">70%</span>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
