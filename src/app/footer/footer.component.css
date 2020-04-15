@@ -87,3 +87,12 @@
 	}
 /**} **/
 
+@media (max-width: 500px) {
+  .contact-button{
+  	transform: scale(0.9);
+  }
+  .contact-button:hover{
+	transform: scale(0.8);
+	}
+}
+

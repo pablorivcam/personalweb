@@ -8,13 +8,13 @@
 		<div [class.show]="show" class="collapse navbar-collapse"
 			id="collapsibleNavbar">
 			<ul class="navbar-nav">
-				<li class="nav-item"><a class="nav-link" href="#"
+				<li class="nav-item" (click)="toggleCollapse()"><a class="nav-link" href="#"
 					[ngx-scroll-to]="'#intial-animation-container'" translate>Inicio</a></li>
-				<li class="nav-item"><a class="nav-link" href="#"
+				<li class="nav-item" (click)="toggleCollapse()"><a class="nav-link" href="#"
 					[ngx-scroll-to]="'#about-information'" [ngx-scroll-to-offset]="-100" translate>Sobre mi</a></li>
-				<li class="nav-item"><a class="nav-link" href="#" [ngx-scroll-to]="'#education'" [ngx-scroll-to-offset]="-100" translate>Currículum</a></li>
-				<li class="nav-item"><a class="nav-link" href="#" [ngx-scroll-to]="'#skills-information'" [ngx-scroll-to-offset]="-100" translate>Habilidades</a></li>
-				<li class="nav-item"><a class="nav-link" href="#" [ngx-scroll-to]="'#footer-information'" [ngx-scroll-to-offset]="-100" translate>Contacto</a></li>
+				<li class="nav-item" (click)="toggleCollapse()"><a class="nav-link" href="#" [ngx-scroll-to]="'#education'" [ngx-scroll-to-offset]="-100" translate>Currículum</a></li>
+				<li class="nav-item" (click)="toggleCollapse()"><a class="nav-link" href="#" [ngx-scroll-to]="'#skills-information'" [ngx-scroll-to-offset]="-100" translate>Habilidades</a></li>
+				<li class="nav-item" (click)="toggleCollapse()"><a class="nav-link" href="#" [ngx-scroll-to]="'#footer-information'" [ngx-scroll-to-offset]="-100" translate>Contacto</a></li>
 			</ul>
 		</div>
 	</nav>

@@ -156,6 +156,12 @@
 	}
 }
 
+<!--[if IE 9]>
+ 	.out-of-view {
+		width: unset !important;
+	}   
+<![endif]-->
+
 @media (max-width: 500px) {
 	.skill_category_icon h2{
 		font-size: 1.25rem;
