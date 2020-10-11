@@ -71,7 +71,7 @@ canvas{
 }
 
 .my_button .fa-icon{
-	font-size: 13pt;
+	font-size: 1.5em;
 	animation: rotate2 0.5s;
 	animation-fill-mode: forwards;	    
 }

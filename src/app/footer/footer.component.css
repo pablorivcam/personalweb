@@ -21,6 +21,10 @@
 	padding-bottom: 2em !important;	
 }
 
+.emailLabel{
+	font-size: 1rem;
+}
+
 .footer_container{
 	position: relative;
 	display: block;

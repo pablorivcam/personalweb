@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faPhone, faEnvelope, faDesktop, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faEnvelope, faDesktop, faMapMarkerAlt, faCircle, faStar } from '@fortawesome/free-solid-svg-icons';
 
 @Component( {
     selector: 'curriculum',
@@ -12,6 +12,8 @@ export class CurriculumComponent implements OnInit {
     faPhone = faPhone;
     faWeb = faDesktop;
     faLocation = faMapMarkerAlt;
+    faCircle = faCircle;
+    faStar = faStar;
 
     constructor() { }
 

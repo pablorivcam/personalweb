@@ -8,17 +8,30 @@
 	padding-top: 0.9em;
 }
 
+#curriculum-name h2{
+	font-size: 3rem;
+	color: #FFFFFF;
+}
+
+hr {
+	margin-top: 1px;
+}
+
+#curriculum-name h4{
+	font-size: 2rem;
+}
+
 #curriculum-header{
 	display : inline-flex;
 	width: 100%;
 	padding: 1em;
-	background: #212529;
+	background: #0074A5;
 	color: #FFFFFF;
 }
 
 #curriculum-footer{
 	width: 100%;
-	padding: 3em 1em;
+	padding: 3em 0.5em;
 	background: #212529;
 }
 
@@ -29,14 +42,18 @@
 }
 
 .curriculum-left-section{
-	width: 20%;
-	text-align: center;
-	background: #D5D5D5;	
+	width: 30%;
+	background: #F0F0F0;	
 	padding: 1em;
+	padding-left: 2em;
+}
+
+.curriculum-left-section h2{
+	text-align: center;
 }
 
 .curriculum-right-section{
-	width: 80%;
+	width: 70%;
 	padding: 1em;
 	background: #FFFFFF;	
 }
@@ -60,11 +77,12 @@
 
 h2{
 	width:100%;
+	font-size: 1.5rem;	
 	margin: 0;
 	text-align: center;
 	font-weight: bold;
 	padding: 0em;
-	color: #1C5D99;
+	color: #0074A5;
 }
 
 .study-years{
@@ -116,3 +134,40 @@ h2{
 	width: 200px;
 	display:flex;
 }
+
+.customTable{
+	width: 100%;
+}
+
+.customTable td:first-child {
+	color: #999999;
+	width: 10em;	
+	text-align: right;
+	vertical-align: top;
+}
+	
+.customTable td:nth-child(even){
+	padding-left: 1em;
+	vertical-align: top;
+}
+
+.customTable tr td{
+	padding-bottom: 1em;
+}
+
+.skillTable fa-icon {
+	margin: 0 0.15em;
+	color: #0074A5;
+}
+
+.skillTable td:first-child {
+	width: 6em;	
+	vertical-align: top;
+}
+
+.languajeSkill span{
+	margin-right: 1em;
+	width: 50px;
+}
+
+	
