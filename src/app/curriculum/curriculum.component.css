@@ -105,11 +105,8 @@ h2{
 }
 
 .curriculum-skill-category{
-	width: 50%;
-}
-
-.curriculum-skill-category{
 	margin-bottom: 0em auto 1em auto;
+	padding: 0 1em;
 }
 
 .curriculum-skill-progress{
